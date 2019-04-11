@@ -6,22 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>简单选择排序 | Hexo</title>
+  <title>简单选择排序 | Uwill的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="&amp;emsp;&amp;emsp;通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。即：对一组记录，经过第一轮比较，找出最小的记录，然后将其与第一个记录的位置交换；然后从第二个记录开始进行第二轮比较，找出最小的记录与第二个记录交换；重复此过程，直到只剩一个数。   代码如下：  12345678910111213141516171819202122232425262">
-<meta name="keywords" content="排序">
+<meta name="keywords" content="排序,算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="简单选择排序">
 <meta property="og:url" content="http://yoursite.com/2019/04/10/简单选择排序/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Uwill的博客">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。即：对一组记录，经过第一轮比较，找出最小的记录，然后将其与第一个记录的位置交换；然后从第二个记录开始进行第二轮比较，找出最小的记录与第二个记录交换；重复此过程，直到只剩一个数。   代码如下：  12345678910111213141516171819202122232425262">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-11T03:27:47.155Z">
+<meta property="og:updated_time" content="2019-04-11T10:25:22.636Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单选择排序">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。即：对一组记录，经过第一轮比较，找出最小的记录，然后将其与第一个记录的位置交换；然后从第二个记录开始进行第二轮比较，找出最小的记录与第二个记录交换；重复此过程，直到只剩一个数。   代码如下：  12345678910111213141516171819202122232425262">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Uwill的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -51,8 +51,10 @@
 			<img src="img/1988.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">多久以后呢</a></h1>
+		  <h1 class="header-author"><a href="/">Uwill</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">老冉冉其将至兮</p>
 		
 
 		<nav class="header-menu">
@@ -71,7 +73,7 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友情链接</a>
     			
             
     			
@@ -84,11 +86,11 @@
 				
 					<a class="github" target="_blank" href="https://github.com/sywmomoda/" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weibo" target="_blank" href="https://weibo.com/6305163715/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="weixin" target="_blank" href="/img/wechat.png" title="weixin"><i class="icon-weixin"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="bilibili" target="_blank" href="https://www.bilibili.com/?spm_id_from=333.334.b_62616e6e65725f6c696e6b.12" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 			</div>
 		</nav>
@@ -109,8 +111,10 @@
 				<img src="img/1988.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">多久以后呢</h1>
+			  <h1 class="header-author js-header-author">Uwill</h1>
 			</hgroup>
+			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>老冉冉其将至兮<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -125,11 +129,11 @@
 					
 						<a class="github" target="_blank" href="https://github.com/sywmomoda/" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weibo" target="_blank" href="https://weibo.com/6305163715/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="weixin" target="_blank" href="/img/wechat.png" title="weixin"><i class="icon-weixin"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="bilibili" target="_blank" href="https://www.bilibili.com/?spm_id_from=333.334.b_62616e6e65725f6c696e6b.12" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 				</div>
 			</nav>
@@ -219,6 +223,10 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">排序</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
       		
 		</ul>
 	</div>
@@ -287,6 +295,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2019/04/11/感知机算法/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          感知机算法
+        
+      </div>
+    </a>
+  
   
     <a href="/2019/04/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Hello World</div>
@@ -332,7 +349,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 多久以后呢
+    		&copy; 2019 Uwill
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -390,7 +407,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友情链接</a></li>
       
         
       
@@ -416,6 +433,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">排序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
@@ -467,27 +492,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="https://www.baidu.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>百度</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+              <a href="https://www.zhihu.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>知乎</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+              <a href="https://www.bilibili.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>哔哩哔哩</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+              <a href="https://github.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>GitHub</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+              <a href="https://stackoverflow.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>stackoverflow</a>
             </li>
           
         </ul>
@@ -498,7 +519,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;font size =&#34;4&#34; bold&gt;要努力呀(`^`)&lt;br&gt;要开心呀(^_^)&lt;br&gt;要坚持呀(*_*)&lt;br&gt;&lt;br&gt;数学系在读，努力学习中&lt;/font&gt;</div>
   	  	
     	</section>
     
