@@ -8,23 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>简单选择排序 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简单选择排序通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。&amp;ensp; 排序：&amp;ensp;交换和打印数组：&amp;ensp;main方法：&amp;ensp;运行结果：  时间复杂度：O(n^2), 空间复杂度：O(1), 是不稳定的">
-<meta name="keywords" content="排序，算法">
+  <meta name="description" content="&amp;emsp;&amp;emsp;通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。即：对一组记录，经过第一轮比较，找出最小的记录，然后将其与第一个记录的位置交换；然后从第二个记录开始进行第二轮比较，找出最小的记录与第二个记录交换；重复此过程，直到只剩一个数。   代码如下：  12345678910111213141516171819202122232425262">
+<meta name="keywords" content="排序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="简单选择排序">
 <meta property="og:url" content="http://yoursite.com/2019/04/10/简单选择排序/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="简单选择排序通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。&amp;ensp; 排序：&amp;ensp;交换和打印数组：&amp;ensp;main方法：&amp;ensp;运行结果：  时间复杂度：O(n^2), 空间复杂度：O(1), 是不稳定的">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。即：对一组记录，经过第一轮比较，找出最小的记录，然后将其与第一个记录的位置交换；然后从第二个记录开始进行第二轮比较，找出最小的记录与第二个记录交换；重复此过程，直到只剩一个数。   代码如下：  12345678910111213141516171819202122232425262">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/04/10/简单选择排序/sort.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/10/简单选择排序/swap&print.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/10/简单选择排序/main.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/10/简单选择排序/result.png">
-<meta property="og:updated_time" content="2019-04-10T12:36:11.567Z">
+<meta property="og:updated_time" content="2019-04-11T03:27:47.155Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单选择排序">
-<meta name="twitter:description" content="简单选择排序通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。&amp;ensp; 排序：&amp;ensp;交换和打印数组：&amp;ensp;main方法：&amp;ensp;运行结果：  时间复杂度：O(n^2), 空间复杂度：O(1), 是不稳定的">
-<meta name="twitter:image" content="http://yoursite.com/2019/04/10/简单选择排序/sort.png">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。即：对一组记录，经过第一轮比较，找出最小的记录，然后将其与第一个记录的位置交换；然后从第二个记录开始进行第二轮比较，找出最小的记录与第二个记录交换；重复此过程，直到只剩一个数。   代码如下：  12345678910111213141516171819202122232425262">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -180,10 +175,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简单选择排序"><a href="#简单选择排序" class="headerlink" title="简单选择排序"></a>简单选择排序</h2><p><font size="5">通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。<br>&ensp; 排序：<img src="/2019/04/10/简单选择排序/sort.png" alt="Alt text"><br>&ensp;交换和打印数组：<br><img src="/2019/04/10/简单选择排序/swap&amp;print.png" alt="Alt text"><br>&ensp;main方法：<br><img src="/2019/04/10/简单选择排序/main.png" alt="Alt text"><br>&ensp;<font size="5">运行结果：<img src="/2019/04/10/简单选择排序/result.png" alt="Alt text"></font></font></p>
+        <font size="5">&emsp;&emsp;通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。即：对一组记录，经过第一轮比较，找出最小的记录，然后将其与第一个记录的位置交换；然后从第二个记录开始进行第二轮比较，找出最小的记录与第二个记录交换；重复此过程，直到只剩一个数。</font>
+
 <blockquote>
-<p>时间复杂度：O(n^2), 空间复杂度：O(1), 是不稳定的</p>
+<font size="5">代码如下：</font>
 </blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SelectSort</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span>[] a= <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length;i++) &#123;<span class="comment">//随机给数组赋值</span></span><br><span class="line">			a[i] = (<span class="keyword">int</span>) (Math.random()*<span class="number">10</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">"排序前："</span>);</span><br><span class="line">		print(a);</span><br><span class="line">		sort(a);</span><br><span class="line">		System.out.println(<span class="string">"\n排序后："</span>);</span><br><span class="line">		print(a);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a)</span> </span>&#123;<span class="comment">//排序</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length-<span class="number">1</span>;i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> tag = i;<span class="comment">//存储最小值的下标</span></span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;a.length;j++) &#123;</span><br><span class="line">				tag = a[j]&lt;a[tag] ? j:tag;<span class="comment">//与其他所有数比较，移动tag，找出最小值</span></span><br><span class="line">			&#125;   </span><br><span class="line">			swap(a,i,tag);<span class="comment">//将a[i]与a[tag]交换</span></span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;<span class="comment">//交换方法</span></span><br><span class="line">		<span class="keyword">int</span> temp = a[i];</span><br><span class="line">		a[i] = a[j];</span><br><span class="line">		a[j] = temp;	</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">int</span>[] a)</span> </span>&#123;<span class="comment">//打印数组方法</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:a) &#123;</span><br><span class="line">			System.out.print(i+<span class="string">" "</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<font size="5"> 时间复杂度：O(n^2), 空间复杂度：O(1), 不稳定</font></blockquote>
 
       
 
@@ -218,7 +217,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">排序，算法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">排序</a>
         		</li>
       		
 		</ul>
@@ -416,7 +415,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">排序，算法</a>
+                <a href="javascript:void(0)" class="js-tag color3">排序</a>
               </li>
             
             <div class="clearfix"></div>
