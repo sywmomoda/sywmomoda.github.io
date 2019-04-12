@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Uwill的博客</title>
+  <title>Uwill&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="学习者，程序员, 数学系，开发，算法">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Uwill的博客">
+<meta property="og:title" content="Uwill&#39;s Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Uwill的博客">
+<meta property="og:site_name" content="Uwill&#39;s Blog">
 <meta property="og:description" content="学习者，程序员, 数学系，开发，算法">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Uwill的博客">
+<meta name="twitter:title" content="Uwill&#39;s Blog">
 <meta name="twitter:description" content="学习者，程序员, 数学系，开发，算法">
   
-    <link rel="alternative" href="/atom.xml" title="Uwill的博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Uwill&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -62,6 +62,8 @@
 				<li><a href="/archives/index.html">归档</a></li>
 	        
 				<li><a href="/tags/随笔/">随笔</a></li>
+	        
+				<li><a href="/tags/杂记/">杂记</a></li>
 	        
 			</ul>
 		</nav>
@@ -129,6 +131,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -149,11 +153,13 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
+					<li style="width: 25%"><a href="/archives/index.html">归档</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 25%"><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li style="width: 25%"><a href="/tags/杂记/">杂记</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,6 +175,88 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-hexo-d后，需要在github上重新设置域名的情况" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/12/hexo-d后，需要在github上重新设置域名的情况/">hexo d后，需要在github上重新设置域名的情况</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/12/hexo-d后，需要在github上重新设置域名的情况/" class="archive-article-date">
+  	<time datetime="2019-04-12T12:52:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <font size="5">&emsp;&emsp;将我的hexo博客绑定我自己的域名后发现，每次hexo d部署后，都需要在github上重新设置域名。原因是每次部署都会将CNAME文件自动删除。<br>&emsp;&emsp;解决办法：</font>
+
+<blockquote>
+<p><font size="5">在博客的source目录下创建一个名为CNAME的文件，注意这个CNAME文件没有任何后缀，内容为自己的域名,保存。</font></p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">asacoder.cn</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><font size="5">然后hexo d，重新部署，问题解决。</font></p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">杂记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/12/hexo-d后，需要在github上重新设置域名的情况/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-插入排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -733,6 +821,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">杂记</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">排序</a>
