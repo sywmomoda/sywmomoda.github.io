@@ -176,6 +176,88 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-归并排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/16/归并排序/">归并排序</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/16/归并排序/" class="archive-article-date">
+  	<time datetime="2019-04-16T07:11:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <font size="5">&emsp;&emsp;“归”代表的是递归，即递归的将数组折半的分离为单个数组；“并”就是将分开的数据有序的合并到一起。“归并”的含义就是将两个或两个以上的有序表组合成一个新的有序表。归并排序是利用递归与分治技术将数据序列划分为越来越小的半子表，再对半子表排序，最后再利用递归方法将排好序的半字表合并成越来越大的有序序列。<br>&emsp;&emsp;假设初始序列含有n个记录，可以看成n个有序的子序列，每个子序列长度为1，两两归并，得到n/2个长度为2或1的有序子序列，继续两两归并…直至得到一个长度为n的子序列为止，这种方法称为2-路归并排序。如下方代码所示，但在一般情况下很少使用2-路归并进行内部排序。<br></font>
+
+<blockquote>
+<font size="5">Java代码如下：</font>
+</blockquote>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">排序</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/16/归并排序/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-希尔排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -196,10 +278,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <font size="5">&emsp;&emsp;希尔排序，也叫缩小增量排序；基本原理是：先将待排序的数组分割成多个子序列，使得没个子序列的元素相对较少，然后对各个子序列分别进行插入排序，待整个序列基本有序后，最后进行一次直接插入排序。<br>    &emsp;希尔排序的基本步骤为：<br>    1. 选择增量，分割子序列；<br>    2. 对每个子序列进行直接插入排序，得到第一躺排序结果；（至此称为一趟希尔排序）<br>    3. 缩小增量，进行第二趟希尔排序…;<br>    4. 最后对整个序列进行一趟直接插入排序。</font>
+        <font size="5">&emsp;&emsp;希尔排序，也叫缩小增量排序；基本原理是：先将待排序的数组分割成多个子序列，使得每个子序列的元素相对较少，然后对各个子序列分别进行插入排序，待整个序列基本有序后，最后进行一次直接插入排序。<br>    &emsp;希尔排序的基本步骤为：<br>    1. 选择增量，分割子序列；<br>    2. 对每个子序列进行直接插入排序，得到第一躺排序结果；（至此称为一趟希尔排序）<br>    3. 缩小增量，进行第二趟希尔排序…;<br>    4. 最后对整个序列进行一趟直接插入排序。</font>
 
 <blockquote>
-<font size="5"> 代码如下：</font>
+<font size="5"> Java代码如下：</font>
 </blockquote>
         
       
@@ -363,7 +445,7 @@
         <font size="5">&emsp;&emsp;对于给定的一组记录，初始时假定第一个记录自成一个有序序列，从第二个记录开始不断向前插入到有序序列中，直至最后一个记录插入到有序序列中为止。</font>
 
 <blockquote>
-<font size="5">代码如下：</font>
+<font size="5">Java代码如下：</font>
 </blockquote>
         
       
@@ -445,7 +527,7 @@
         <font size="5">&emsp;&emsp;对于给定的n个记录，从第一个记录开始依次对相邻的两个记录进行比较，当前面的记录大于后面的记录时，交换位置，进行第一轮比较后，n个记录中最大的记录将位于第n位，（即最大的记录沉底）；然后对前n-1个记录进行第二轮比较，重复此过程，直到只剩下一个数。</font>
 
 <blockquote>
-<font size="5">代码如下：</font>
+<font size="5">Java代码如下：</font>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];<span class="comment">//长度10的整型数组</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length;i++)&#123;</span><br><span class="line">		a[i] = (<span class="keyword">int</span>)(Math.random()*<span class="number">10</span>);<span class="comment">//给数组随机赋值，0-9</span></span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println(<span class="string">"排序前:"</span>);</span><br><span class="line">	print(a);</span><br><span class="line">	sort(a);</span><br><span class="line">	System.out.println(<span class="string">"\n排序后:"</span>);</span><br><span class="line">	print(a);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;<span class="comment">//排序方法</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=a.length-<span class="number">1</span>;i&gt;<span class="number">0</span>;i--)&#123;<span class="comment">//要比较的记录逐渐减少，直至只剩下一个数</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;i;j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(a[j+<span class="number">1</span>]&lt;a[j])&#123;<span class="comment">//比较,若前面记录比后面的大，则交换,继续向后比较</span></span><br><span class="line">				<span class="keyword">int</span> temp = a[j];</span><br><span class="line">				a[j] = a[j+<span class="number">1</span>];</span><br><span class="line">				a[j+<span class="number">1</span>] = temp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;<span class="comment">//打印数组方法</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i : a)&#123;</span><br><span class="line">		System.out.print(i+<span class="string">" "</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -677,7 +759,7 @@
         <font size="5">&emsp;&emsp;通过n-i次关键字之间的比较，从n-i+1个记录中选出关键字最小的记录，并和第i个记录交换。即：对一组记录，经过第一轮比较，找出最小的记录，然后将其与第一个记录的位置交换；然后从第二个记录开始进行第二轮比较，找出最小的记录与第二个记录交换；重复此过程，直到只剩一个数。</font>
 
 <blockquote>
-<font size="5">代码如下：</font>
+<font size="5">Java代码如下：</font>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SelectSort</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span>[] a= <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length;i++) &#123;<span class="comment">//随机给数组赋值</span></span><br><span class="line">			a[i] = (<span class="keyword">int</span>) (Math.random()*<span class="number">10</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">"排序前："</span>);</span><br><span class="line">		print(a);</span><br><span class="line">		sort(a);</span><br><span class="line">		System.out.println(<span class="string">"\n排序后："</span>);</span><br><span class="line">		print(a);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a)</span> </span>&#123;<span class="comment">//排序</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length-<span class="number">1</span>;i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> tag = i;<span class="comment">//存储最小值的下标</span></span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;a.length;j++) &#123;</span><br><span class="line">				tag = a[j]&lt;a[tag] ? j:tag;<span class="comment">//与其他所有数比较，移动tag，找出最小值</span></span><br><span class="line">			&#125;   </span><br><span class="line">			swap(a,i,tag);<span class="comment">//将a[i]与a[tag]交换</span></span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;<span class="comment">//交换方法</span></span><br><span class="line">		<span class="keyword">int</span> temp = a[i];</span><br><span class="line">		a[i] = a[j];</span><br><span class="line">		a[j] = temp;	</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">int</span>[] a)</span> </span>&#123;<span class="comment">//打印数组方法</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i:a) &#123;</span><br><span class="line">			System.out.print(i+<span class="string">" "</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>

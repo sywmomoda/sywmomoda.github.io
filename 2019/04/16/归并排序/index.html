@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>插入排序 | Uwill&#39;s Blog</title>
+  <title>归并排序 | Uwill&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;emsp;&amp;emsp;对于给定的一组记录，初始时假定第一个记录自成一个有序序列，从第二个记录开始不断向前插入到有序序列中，直至最后一个记录插入到有序序列中为止。   Java代码如下：">
+  <meta name="description" content="&amp;emsp;&amp;emsp;“归”代表的是递归，即递归的将数组折半的分离为单个数组；“并”就是将分开的数据有序的合并到一起。“归并”的含义就是将两个或两个以上的有序表组合成一个新的有序表。归并排序是利用递归与分治技术将数据序列划分为越来越小的半子表，再对半子表排序，最后再利用递归方法将排好序的半字表合并成越来越大的有序序列。&amp;emsp;&amp;emsp;假设初始序列含有n个记录，可以看成n个有序的子序列，每">
 <meta name="keywords" content="排序,算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="插入排序">
-<meta property="og:url" content="http://yoursite.com/2019/04/12/插入排序/index.html">
+<meta property="og:title" content="归并排序">
+<meta property="og:url" content="http://yoursite.com/2019/04/16/归并排序/index.html">
 <meta property="og:site_name" content="Uwill&#39;s Blog">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;对于给定的一组记录，初始时假定第一个记录自成一个有序序列，从第二个记录开始不断向前插入到有序序列中，直至最后一个记录插入到有序序列中为止。   Java代码如下：">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;“归”代表的是递归，即递归的将数组折半的分离为单个数组；“并”就是将分开的数据有序的合并到一起。“归并”的含义就是将两个或两个以上的有序表组合成一个新的有序表。归并排序是利用递归与分治技术将数据序列划分为越来越小的半子表，再对半子表排序，最后再利用递归方法将排好序的半字表合并成越来越大的有序序列。&amp;emsp;&amp;emsp;假设初始序列含有n个记录，可以看成n个有序的子序列，每">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-16T11:31:47.436Z">
+<meta property="og:updated_time" content="2019-04-16T11:39:04.590Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="插入排序">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;对于给定的一组记录，初始时假定第一个记录自成一个有序序列，从第二个记录开始不断向前插入到有序序列中，直至最后一个记录插入到有序序列中为止。   Java代码如下：">
+<meta name="twitter:title" content="归并排序">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;“归”代表的是递归，即递归的将数组折半的分离为单个数组；“并”就是将分开的数据有序的合并到一起。“归并”的含义就是将两个或两个以上的有序表组合成一个新的有序表。归并排序是利用递归与分治技术将数据序列划分为越来越小的半子表，再对半子表排序，最后再利用递归方法将排好序的半字表合并成越来越大的有序序列。&amp;emsp;&amp;emsp;假设初始序列含有n个记录，可以看成n个有序的子序列，每">
   
     <link rel="alternative" href="/atom.xml" title="Uwill&#39;s Blog" type="application/atom+xml">
   
@@ -176,35 +176,35 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-插入排序" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-归并排序" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      插入排序
+      归并排序
     </h1>
   
 
         
-        <a href="/2019/04/12/插入排序/" class="archive-article-date">
-  	<time datetime="2019-04-12T08:31:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-12</time>
+        <a href="/2019/04/16/归并排序/" class="archive-article-date">
+  	<time datetime="2019-04-16T07:11:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <font size="5">&emsp;&emsp;对于给定的一组记录，初始时假定第一个记录自成一个有序序列，从第二个记录开始不断向前插入到有序序列中，直至最后一个记录插入到有序序列中为止。</font>
+        <font size="5">&emsp;&emsp;“归”代表的是递归，即递归的将数组折半的分离为单个数组；“并”就是将分开的数据有序的合并到一起。“归并”的含义就是将两个或两个以上的有序表组合成一个新的有序表。归并排序是利用递归与分治技术将数据序列划分为越来越小的半子表，再对半子表排序，最后再利用递归方法将排好序的半字表合并成越来越大的有序序列。<br>&emsp;&emsp;假设初始序列含有n个记录，可以看成n个有序的子序列，每个子序列长度为1，两两归并，得到n/2个长度为2或1的有序子序列，继续两两归并…直至得到一个长度为n的子序列为止，这种方法称为2-路归并排序。如下方代码所示，但在一般情况下很少使用2-路归并进行内部排序。<br></font>
 
 <blockquote>
 <font size="5">Java代码如下：</font>
 </blockquote>
 <a id="more"></a>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];<span class="comment">//长度10的整型数组</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length;i++)&#123;</span><br><span class="line">		a[i] = (<span class="keyword">int</span>)(Math.random()*<span class="number">10</span>);<span class="comment">//给数组随机赋值，0-9</span></span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println(<span class="string">"排序前:"</span>);</span><br><span class="line">	print(a);</span><br><span class="line">	sort(a);</span><br><span class="line">	System.out.println(<span class="string">"\n排序后:"</span>);</span><br><span class="line">	print(a);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;<span class="comment">//插入排序方法</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;a.length;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=i;j&gt;<span class="number">0</span>;j--)&#123;<span class="comment">//从第二个记录开始不断向前插入</span></span><br><span class="line">		<span class="keyword">if</span>(a[j]&lt;a[j-<span class="number">1</span>])&#123;<span class="comment">//与前一个数比较，若逆序，则交换，继续向前比较，直至前面没有数了或者有序了</span></span><br><span class="line">			<span class="keyword">int</span> temp = a[j];</span><br><span class="line">			a[j] = a[j-<span class="number">1</span>];</span><br><span class="line">			a[j-<span class="number">1</span>] = temp;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;<span class="comment">//因为前面的都是有序的，所以有序即可break</span></span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;<span class="comment">//打印数组方法</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i : a)&#123;</span><br><span class="line">		System.out.print(i+<span class="string">" "</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span>[] a = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length;i++)&#123;</span><br><span class="line">		a[i] = (<span class="keyword">int</span>)(Math.random()*<span class="number">10</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println(<span class="string">"排序前："</span>);</span><br><span class="line">	print(a);</span><br><span class="line">	merge(a,<span class="number">0</span>,a.length-<span class="number">1</span>);</span><br><span class="line">	System.out.println(<span class="string">"\n排序后："</span>);</span><br><span class="line">	print(a);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span>[] a,<span class="keyword">int</span> left,<span class="keyword">int</span> right)</span></span>&#123;	<span class="comment">//归并，left表示左边起始位置，right表示右边结束位置</span></span><br><span class="line">	<span class="keyword">int</span> center = (left + right)/<span class="number">2</span>;		<span class="comment">//中间位置，即左半边边结束位置</span></span><br><span class="line">	<span class="keyword">if</span>(left&lt;right)&#123;		<span class="comment">//递归的结束条件为左指针和右指针之间没有数了</span></span><br><span class="line">		merge(a,left,center);	<span class="comment">//左半边归并</span></span><br><span class="line">		merge(a,center+<span class="number">1</span>,right);<span class="comment">//右半边归并</span></span><br><span class="line">		sort(a,left,right,center); <span class="comment">//排序</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a,<span class="keyword">int</span> l,<span class="keyword">int</span> r,<span class="keyword">int</span> center)</span></span>&#123;	</span><br><span class="line">	<span class="keyword">int</span>[] temp = <span class="keyword">new</span> <span class="keyword">int</span>[r - l + <span class="number">1</span>];	<span class="comment">//临时数组用来存放排序好的数据,大小为r-l+1</span></span><br><span class="line">	<span class="keyword">int</span> k = <span class="number">0</span>,i = l, j = center + <span class="number">1</span>;	<span class="comment">//i表示左半边起点，center为左边结束位置，j表示右半边起点，</span></span><br><span class="line">	<span class="keyword">while</span>(i&lt;=center&amp;&amp;j&lt;=r) temp[k++] = a[j]&lt;a[i] ? a[j++]:a[i++];	<span class="comment">//排序</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span>(i&lt;=center) temp[k++] = a[i++]; 	<span class="comment">//哪边有剩余，就直接复制进临时数组</span></span><br><span class="line">	<span class="keyword">while</span>(j&lt;=r) temp[k++] = a[j++];</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> m=<span class="number">0</span>;m&lt;temp.length;m++)&#123;	<span class="comment">//将排序好的数据复制进原数组</span></span><br><span class="line">		a[l+m] = temp[m];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">int</span>[] a)</span></span>&#123;	<span class="comment">//打印数组</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i:a)&#123;</span><br><span class="line">		System.out.print(i+<span class="string">" "</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><font size="5">时间复杂度：O(n^2),空间复杂度O(1)，稳定</font></p>
+<p><font size="5">时间复杂度O(nlogn),空间复杂度O(n)，稳定</font></p>
 </blockquote>
 
       
@@ -300,7 +300,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/12/插入排序/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/16/归并排序/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -314,18 +314,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/04/12/hexo-d后，需要在github上重新设置域名的情况/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          hexo d后，需要在github上重新设置域名的情况
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/04/11/冒泡排序/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">冒泡排序</div>
+    <a href="/2019/04/13/希尔排序/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">希尔排序</div>
       <i class="icon-circle-right"></i>
     </a>
   
